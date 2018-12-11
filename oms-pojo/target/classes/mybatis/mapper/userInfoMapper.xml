@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gucy.dao.UserInfoDao">
+
+    <insert id="insert" parameterType="com.gucy.entitys.UserInfo">
+        insert into userinfo(id,username,password,brithday) 
+        values(#{userInfo.id},#{userInfo.username},#{userInfo.password},#{userInfo.brithday},#{userInfo.email})
+    </insert>
+    
+    <select id="getOne" resultType="com.gucy.entitys.UserInfo" parameterType="java.lang.Long">
+        select * from userinfo where id = #{id}
+    </select>
+    
+    <select id="findOne" resultType="com.gucy.entitys.UserInfo" parameterType="java.lang.Long">
+        select * from userinfo where username = #{userInfo.username} and password = #{userInfo.password}
+    </select>
+    
+    <update id="update" parameterType="com.gucy.entitys.UserInfo">
+        update userinfo set password = #{userinfo.password} where id = #{userinfo.id}
+    </update>
+    
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from userinfo where id = #{id}
+    </delete>
+</mapper>

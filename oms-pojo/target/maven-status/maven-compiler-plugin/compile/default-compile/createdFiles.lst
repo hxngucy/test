@@ -1,0 +1,3 @@
+com\gucy\entitys\UserInfo.class
+com\gucy\dao\UserInfoDao.class
+org\oms\pojo\App.class
