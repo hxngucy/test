@@ -1,0 +1,6 @@
+com\gu\service\impl\UserInfoServiceImpl.class
+com\gu\service\UserInfoServer.class
+com\gu\entity\UserInfo.class
+com\gu\controller\UserInfoController.class
+com\gu\dao\UserInfoDao.class
+com\gu\utils\SupportRedisUtils.class
