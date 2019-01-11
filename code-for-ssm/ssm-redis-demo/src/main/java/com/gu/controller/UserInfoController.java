@@ -19,7 +19,6 @@ public class UserInfoController {
 
 	@Autowired
 	private UserInfoServer userInfoService;
-	
 	private static final Logger logger = LoggerFactory.getLogger(UserInfoController.class);
 	
 	@RequestMapping({"","index"})
